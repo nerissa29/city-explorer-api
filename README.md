@@ -67,11 +67,19 @@ Name of feature: *2. Weather (placeholder): As a user of City Explorer, I want t
 
 Estimate of time needed to complete: 2 hours
 
-Start time: 8:40pm
+1st Day in Lab:
 
-Finish time:
+- Start time: 8:40pm
 
-Actual time needed to complete:
+- Finish time: 2:40am
+
+2nd Day in Lab:
+
+- Start time: 7:10pm
+
+- Finish time: 7:50pm
+
+Actual time needed to complete: 6hours 40min
 
 ### 3. Errors (revisited): As a user, I want clear messages if something goes wrong so I know if I need to make any changes or try again in a different manner
 
@@ -79,8 +87,8 @@ Name of feature: *3. Errors (revisited): As a user, I want clear messages if som
 
 Estimate of time needed to complete: 1 hour and 30 min
 
-Start time: 7:36 pm
+Start time: 7:36pm
 
-Finish time:
+Finish time: 2:40am
 
-Actual time needed to complete:
+Actual time needed to complete: 6hours

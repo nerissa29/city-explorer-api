@@ -43,7 +43,7 @@ app.get('/weather', (request, response, next) => {
 
     console.log(searchCityData);
 
-    // line 50-53 collaborated with the TA, removing/changing line 55 for easy parsing
+    // line 50-53 collaborated with TA Adam, removing/changing line 55 for easy parsing
     let newArr = searchCityData.data.map(element => {
       return new Forecast(element);
     });

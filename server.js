@@ -48,7 +48,9 @@ app.get('/weather', (request, response, next) => {
       return new Forecast(element);
     });
 
-    // let dataToSend = new Forecast(newArr);
+    // let dataToSend = new Forecast(newArr); // replaced by line 46
+
+
     response.status(200).send(newArr);
 
 
@@ -75,9 +77,9 @@ app.get('*', (request, response) => {
 
 
 // >>>> Error Handling <<<<
-// app.use((error, request, response, next) => {
-//   response.status(500).send(error.message);
-// })
+app.use((error, request, response, next) => {
+  response.status(500).send(error.message);
+});
 
 // >>>> Server Start <<<<
 app.listen(PORT, () => console.log(`Up and runing on ${PORT}`));

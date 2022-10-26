@@ -34,29 +34,22 @@ app.get('/weather', (request, response, next) => {
     let lat = request.query.lat;
     let lon = request.query.lon;
 
-    // let searchQuery = request.query.searchQuery;
-
-
     let searchCityData = data.find(weather => weather.city_name === searchQuery);
 
-    // let searchCityData = data.find(weather => weather.city_name === city_name);
-
-    // let lat = request.query.searchCityData.lat;
-    // let lon = request.query.searchCityData.lon;
 
     console.log('lat', lat);
     console.log('lon', lon);
     console.log(searchQuery);
 
-    // console.log(searchCityData);
+    console.log(searchCityData);
 
+    // line 50-53 collaborated with the TA, removing/changing line 55 for easy parsing
+    let newArr = searchCityData.data.map(element => {
+      return new Forecast(element);
+    });
 
-
-    let dataToSend = new Forecast(searchCityData);
-    response.status(200).send(dataToSend);
-
-    response.status(200).send(`${searchQuery}, ${lat}, ${lon}`);
-    // response.status(200).send(`${searchQuery}`);
+    // let dataToSend = new Forecast(newArr);
+    response.status(200).send(newArr);
 
 
   } catch(error) {
@@ -64,12 +57,12 @@ app.get('/weather', (request, response, next) => {
   }
 });
 
+
 class Forecast {
   constructor(weatherData) {
-    this.weatherData.data.weather.description = weatherData.data.weather.description;
-    this.weatherData.data.datetime = weatherData.data.datetime;
+    this.description = weatherData.weather.description;
+    this.datetime = weatherData.datetime;
   }
-
 }
 
 

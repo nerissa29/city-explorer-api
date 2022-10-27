@@ -73,6 +73,34 @@ class Forecast {
   }
 }
 
+// https://api.themoviedb.org/3/discover/movie?
+app.get('/movies', async (request, response, next) => {
+  try {
+    let titleCity = request.query.title;
+
+    let url = `https://api.themoviedb.org/3/discover/movie/movies?key=${process.env.WEATHER_API_KEY}&title=${titleCity}`;
+
+    let movieData = await axios.get(url);
+
+    console.log('moviedata results:', movieData);
+
+    let newMovieData = movieData.map(movie => {
+      return new Movie(movie.title.includes(titleCity));
+    });
+
+    response.status(200).send(newMovieData);
+
+  } catch(error) {
+    next(error);
+  }
+});
+
+class Movie {
+  constructor(movies) {
+    this.title = movies.title;
+    // this.overview = movies.
+  }
+}
 
 
 

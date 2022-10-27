@@ -29,8 +29,11 @@ app.get('/', (request, response) => {
 
 
 
-
-// http://api.weatherbit.io/v2.0/forecast/daily?key=<your API key>&lat=<from your frontend>&lon=<from your frontend>&day=5&units=F
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>> on localhost <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+//
+//   http://localhost:3001/weather?city_name=seattle&lat=47.60621&lon=-122.33207&day=5&units=F
+//
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 app.get('/weather', async (request, response, next) => {
   try {
@@ -40,6 +43,7 @@ app.get('/weather', async (request, response, next) => {
     let lon = request.query.lon;
 
     let url = `http://api.weatherbit.io/v2.0/forecast/daily/weather?key=${process.env.WEATHER_API_KEY}&lat=${lat}&lon=${lon}&day=7&units=F`;
+
 
     let weatherResults = await axios.get(url);
 
@@ -73,20 +77,26 @@ class Forecast {
   }
 }
 
-// https://api.themoviedb.org/3/discover/movie?
+
+// // >>>>>>>>>>>>>>>>>>>>>>>>>>>> on localhost <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+//
+//  http://localhost:3001/movies?city_name=Seattle&language=en-US&page=1&include_adult=false
+//
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
 app.get('/movies', async (request, response, next) => {
   try {
-    let titleCity = request.query.title;
+    let city = request.query.city_name;
 
-    let url = `https://api.themoviedb.org/3/discover/movie/movies?key=${process.env.WEATHER_API_KEY}&title=${titleCity}`;
+    let url = `https://api.themoviedb.org/3/discover/movie?api_key=${process.env.MOVIE_API_KEY}&city_name=${city}&language=en-US&page=1&include_adult=false`;
 
     let movieData = await axios.get(url);
 
-    console.log('moviedata results:', movieData);
-
-    let newMovieData = movieData.map(movie => {
-      return new Movie(movie.title.includes(titleCity));
+    let newMovieData = movieData.data.results.map(movie => {
+      return new Movie(movie);
     });
+
+    console.log('movieData.data results:', movieData.data.results);
 
     response.status(200).send(newMovieData);
 
@@ -98,7 +108,7 @@ app.get('/movies', async (request, response, next) => {
 class Movie {
   constructor(movies) {
     this.title = movies.title;
-    // this.overview = movies.
+    this.overview = movies.overview;
   }
 }
 

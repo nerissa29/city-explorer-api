@@ -40,11 +40,25 @@ Languages, Frameworks, and platforms:
 
 ## Change Log
 
-10-27-22 12:29am - Application now is sending weather data response to front end. -->
+10-26-2022 8:11 pm - Application now has a fully-functional front-end and back-end
+
+10-27-22 12:29am - Application now is sending weather data response to front end
+
+10-27-2022 8:11 pm - The backend are now able to send data to the front-end, getting information from third party API's 'Weatherbit' and 'Movie DB'
 
 ## Credit and Collaborations
 
 Collaborated with my accountability partners in regards to drawing/planning out the WRRC.
+
+![WRRC Day 1](src/images/WRRC.jpg)
+
+### WRRC Day 2
+
+![WRRC Day 2](src/images/Lab_07_WRRC.jpg)
+
+### WRRC Day 3
+
+![WRRC Day 3](src/images/Lab_08_WRRC.jpg)
 
 ## Time Estimates
 
@@ -100,22 +114,32 @@ Actual time needed to complete: 6hours
 
 Name of feature: *1. Weather (live): As a user of City Explorer, I want to see weather info for the city I searched, so that I know how to pack for an upcoming trip*
 
-Estimate of time needed to complete: 40 min - 1 hour
+Estimate of time needed to complete: 1 hour and 30 min
 
-Start time: 9:40pm
+1st Day in Lab
 
-Finish time: 12:24am
+- Start time: 8:30pm
 
-Actual time needed to complete: 2hours 44min
+- Finish time: 10:00pm
+
+Actual time needed to complete: 1hr 30min
 
 ### 2. Movies: As a user of City Explorer, I want to see info about movies related to the city I searched, so that I can learn more about the destination
 
-Name of feature: *2. Movies: As a user of City Explorer, I want to see info about movies related to the city I searched, so that I can learn more about the destination*
+Name of feature: *1. Weather (live): As a user of City Explorer, I want to see weather info for the city I searched, so that I know how to pack for an upcoming trip*
 
-Estimate of time needed to complete: 1-2 hour
+Estimate of time needed to complete: 1 hour and 30 min
 
-Start time:
+1st Day in Lab
 
-Finish time:
+- Start time: 10:00pm
 
-Actual time needed to complete:
+- Finish time: 2:35am
+
+2nd Day in Lab
+
+- Start time: 5:00pm
+
+- Finish time: 5:37pm
+
+Actual time needed to complete: 5hours+

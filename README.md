@@ -39,15 +39,16 @@ Languages, Frameworks, and platforms:
 - cors
 
 ## Change Log
-<!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
 
-01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
+10-27-22 12:29am - Application now is sending weather data response to front end. -->
 
 ## Credit and Collaborations
 
 Collaborated with my accountability partners in regards to drawing/planning out the WRRC.
 
 ## Time Estimates
+
+## LAB 07
 
 ### 1. Set up your server repository
 
@@ -92,3 +93,29 @@ Start time: 7:36pm
 Finish time: 2:40am
 
 Actual time needed to complete: 6hours
+
+## LAB 08
+
+### 1. Weather (live): As a user of City Explorer, I want to see weather info for the city I searched, so that I know how to pack for an upcoming trip
+
+Name of feature: *1. Weather (live): As a user of City Explorer, I want to see weather info for the city I searched, so that I know how to pack for an upcoming trip*
+
+Estimate of time needed to complete: 40 min - 1 hour
+
+Start time: 9:40pm
+
+Finish time: 12:24am
+
+Actual time needed to complete: 2hours 44min
+
+### 2. Movies: As a user of City Explorer, I want to see info about movies related to the city I searched, so that I can learn more about the destination
+
+Name of feature: *2. Movies: As a user of City Explorer, I want to see info about movies related to the city I searched, so that I can learn more about the destination*
+
+Estimate of time needed to complete: 1-2 hour
+
+Start time:
+
+Finish time:
+
+Actual time needed to complete:

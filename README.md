@@ -52,11 +52,7 @@ Collaborated with my accountability partners in regards to drawing/planning out 
 
 ![WRRC Day 1](src/images/WRRC.jpg)
 
-### WRRC Day 2
-
 ![WRRC Day 2](src/images/Lab_07_WRRC.jpg)
-
-### WRRC Day 3
 
 ![WRRC Day 3](src/images/Lab_08_WRRC.jpg)
 

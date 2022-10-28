@@ -7,6 +7,8 @@
 
 We are creating a backend server containing data that we will be using to pass into our front-end. The front-end will be requesting data from our server, and the back-end will send a response to that request. We will be bringing in libraries that will allow these two to communicate to each other.
 
+Modularize the back-end codebase for easy reading and debugging.
+
 ## Getting Started
 
 - Create new repo 'city-explorer-api', initialized with README file. Clone the repo to your local machine (on your project directory), and ACP.
@@ -45,6 +47,8 @@ Languages, Frameworks, and platforms:
 10-27-22 12:29am - Application now is sending weather data response to front end
 
 10-27-2022 8:11 pm - The backend are now able to send data to the front-end, getting information from third party API's 'Weatherbit' and 'Movie DB'
+
+10-27-2022 11:15 pm - The back-end codebase has now been modularize for easy reading/debugging
 
 ## Credit and Collaborations
 
@@ -159,3 +163,19 @@ Estimate of time needed to complete: 1 hour and 30 min
 - Finish time: 8:41pm
 
 Actual time needed to complete: 5hours+
+
+## LAB 09
+
+### 1. Refactor: Modularize the back-end codebase
+
+Name of feature: *1. Refactor: Modularize the back-end codebase*
+
+Estimate of time needed to complete: 30min-1hour
+
+!st Day in Lab
+
+- Start time: 10:45pm
+
+- Finish time: 11:15pm
+
+Actual time needed to complete: 30min

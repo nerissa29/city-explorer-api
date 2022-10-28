@@ -126,7 +126,7 @@ Actual time needed to complete: 1hr 30min
 
 ### 2. Movies: As a user of City Explorer, I want to see info about movies related to the city I searched, so that I can learn more about the destination
 
-Name of feature: *1. Weather (live): As a user of City Explorer, I want to see weather info for the city I searched, so that I know how to pack for an upcoming trip*
+Name of feature: *2. Movies: As a user of City Explorer, I want to see info about movies related to the city I searched, so that I can learn more about the destination*
 
 Estimate of time needed to complete: 1 hour and 30 min
 
@@ -141,5 +141,19 @@ Estimate of time needed to complete: 1 hour and 30 min
 - Start time: 5:00pm
 
 - Finish time: 5:37pm
+
+Actual time needed to complete: 5hours+
+
+### 3. Publish: Deploy your server. As a user, I want to access the City Explorer application on the web, so that anyone can explore from anywhere
+
+Name of feature: *3. Publish: Deploy your server. As a user, I want to access the City Explorer application on the web, so that anyone can explore from anywhere*
+
+Estimate of time needed to complete: 1 hour and 30 min
+
+2nd Day in Lab
+
+- Start time: 8:29pm
+
+- Finish time: 8:41pm
 
 Actual time needed to complete: 5hours+

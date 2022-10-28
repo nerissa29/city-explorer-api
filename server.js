@@ -57,7 +57,7 @@ app.get('/weather', async (request, response, next) => {
     let forecastData = weatherResults.data.data.map(element => {
       return new Forecast(element);
     });
-    console.log(forecastData);
+    // console.log(forecastData);
 
 
     response.status(200).send(forecastData);
@@ -77,8 +77,7 @@ class Forecast {
   }
 }
 
-
-// // >>>>>>>>>>>>>>>>>>>>>>>>>>>> on localhost <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>> on localhost <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 //
 //  http://localhost:3001/movies?city_name=Seattle&language=en-US&page=1&include_adult=false
 //
@@ -88,15 +87,15 @@ app.get('/movies', async (request, response, next) => {
   try {
     let city = request.query.city_name;
 
-    let url = `https://api.themoviedb.org/3/discover/movie?api_key=${process.env.MOVIE_API_KEY}&city_name=${city}&language=en-US&page=1&include_adult=false`;
+
+    // collaborated with TA Rogers, changed the '&city_name' to '&query'
+    let url = `https://api.themoviedb.org/3/search/movie?api_key=${process.env.MOVIE_API_KEY}&language=en-US&query=${city}&page=1&include_adult=false`;
 
     let movieData = await axios.get(url);
 
     let newMovieData = movieData.data.results.map(movie => {
       return new Movie(movie);
     });
-
-    console.log('movieData.data results:', movieData.data.results);
 
     response.status(200).send(newMovieData);
 

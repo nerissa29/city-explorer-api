@@ -52,15 +52,15 @@ Collaborated with my accountability partners in regards to drawing/planning out 
 
 WRRC Day 1
 
-![WRRC Day 1](src/images/WRRC.jpg)
+![WRRC Day 1](./images/WRRC.jpg)
 
 WRRC Day 2
 
-![WRRC Day 2](src/images/Lab_07_WRRC.jpg)
+![WRRC Day 2](./images/Lab07WRRC.jpg)
 
 WRRC Day 3
 
-![WRRC Day 3](src/images/Lab_08_WRRC.jpg)
+![WRRC Day 3](./images/Lab08WRRC.jpg)
 
 ## Time Estimates
 

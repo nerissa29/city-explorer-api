@@ -54,7 +54,7 @@ Languages, Frameworks, and platforms:
 
 ## Credit and Collaborations
 
-Collaborated with my accountability partners in regards to drawing/planning out the WRRC.
+Collaborated with my accountability partners, Nick Seidel and Jordan Kwan, in regards to drawing/planning out the WRRC.
 
 WRRC Day 1
 
@@ -67,6 +67,10 @@ WRRC Day 2
 WRRC Day 3
 
 ![WRRC Day 3](./images/Lab08WRRC.jpg)
+
+WRRC Day 4
+
+![WRRC Day 3](./images/Lab10WRRC.jpg)
 
 ## Time Estimates
 

@@ -50,6 +50,8 @@ Languages, Frameworks, and platforms:
 
 10-27-2022 11:15 pm - The back-end codebase has now been modularize for easy reading/debugging
 
+10-29-2022 11:47 pm - the Weather component now has the WeatherData child component. The Movie component also now has a child component
+
 ## Credit and Collaborations
 
 Collaborated with my accountability partners in regards to drawing/planning out the WRRC.
@@ -179,3 +181,17 @@ Estimate of time needed to complete: 30min-1hour
 - Finish time: 11:15pm
 
 Actual time needed to complete: 30min
+
+### 2. Refactor: Componentize the front-end codebase
+
+Name of feature: *2. Refactor: Componentize the front-end codebase.*
+
+Estimate of time needed to complete: 30min-1hour
+
+2nd Day in Lab
+
+- Start time: 11:10pm
+
+- Finish time: 11:46pm
+
+Actual time needed to complete: 36min

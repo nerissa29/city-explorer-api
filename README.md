@@ -199,3 +199,26 @@ Estimate of time needed to complete: 30min-1hour
 - Finish time: 11:46pm
 
 Actual time needed to complete: 36min
+
+## LAB 10
+
+### 1: Performance: As a user, I want the application to work with recent results, so that I can see info without the app doing unnecessary API calls
+
+Name of feature: *1: Performance: As a user, I want the application to work with recent results, so that I can see info without the app doing unnecessary API calls*
+Estimate of time needed to complete: 
+
+1st Day in Lab
+
+movie.js
+
+- Start time:
+
+- Finish time:
+
+Starter Code
+
+- Start time: 5:42pm
+
+- Finish time:
+
+Actual time needed to complete: _____

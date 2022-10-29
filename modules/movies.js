@@ -8,11 +8,14 @@ async function getMovieData(request, response, next) {
   try {
     let city = request.query.city_name;
 
+    // >>>>> key creation for data to store <<<<<<
+    let key = city + 'movieImage';
+
     // >>> setting up condition if data exists, and if under a valid timeframe (cache[key].timestamp)..if it is, send the data <<<
 
-    if (cache[city] && Date.now() - cache[city].timestamp < 1.21e+9) { // millisecond >>> 2 weeks
-      console.log('Movies are called, movie data showing!');
-      response.status(200).send(cache[city].data);
+    if (cache[key] && Date.now() - cache[key].timestamp < 1.21e+9) { // 1.21e+9 millisecond >>> 2 weeks
+      console.log('Cache was hit, movie data showing!');
+      response.status(200).send(cache[key].data);
     } else {
       console.log('Cache missed! No movie data present');
       let url = `https://api.themoviedb.org/3/search/movie?api_key=${process.env.MOVIE_API_KEY}&language=en-US&query=${city}&page=1&include_adult=false`;
@@ -23,7 +26,7 @@ async function getMovieData(request, response, next) {
       });
 
       // >>>>>>> adding API return to cache <<<<<<
-      cache[city] = {
+      cache[key] = {
         data: newMovieData,
         timestamp: Date.now()
       };

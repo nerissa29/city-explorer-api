@@ -54,7 +54,7 @@ Languages, Frameworks, and platforms:
 
 ## Credit and Collaborations
 
-Collaborated with my accountability partners in regards to drawing/planning out the WRRC.
+Collaborated with my accountability partners, Nick Seidel and Jordan Kwan, in regards to drawing/planning out the WRRC.
 
 WRRC Day 1
 
@@ -67,6 +67,10 @@ WRRC Day 2
 WRRC Day 3
 
 ![WRRC Day 3](./images/Lab08WRRC.jpg)
+
+WRRC Day 4
+
+![WRRC Day 3](./images/Lab10WRRC.jpg)
 
 ## Time Estimates
 
@@ -195,3 +199,28 @@ Estimate of time needed to complete: 30min-1hour
 - Finish time: 11:46pm
 
 Actual time needed to complete: 36min
+
+## LAB 10
+
+### 1: Performance: As a user, I want the application to work with recent results, so that I can see info without the app doing unnecessary API calls
+
+Name of feature: *1: Performance: As a user, I want the application to work with recent results, so that I can see info without the app doing unnecessary API calls*
+Estimate of time needed to complete:
+
+1st Day in Lab
+
+Starter Code:
+
+- Start time: 3:20pm
+
+- Finish time: 3:45pm
+
+- Start time: 5:42pm
+
+- Finish time: 8:09pm
+
+- Start time: 8:20pm
+
+- Finish time: 11:01pm
+
+Actual time needed to complete: _____

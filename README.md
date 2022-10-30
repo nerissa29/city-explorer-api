@@ -205,20 +205,22 @@ Actual time needed to complete: 36min
 ### 1: Performance: As a user, I want the application to work with recent results, so that I can see info without the app doing unnecessary API calls
 
 Name of feature: *1: Performance: As a user, I want the application to work with recent results, so that I can see info without the app doing unnecessary API calls*
-Estimate of time needed to complete: 
+Estimate of time needed to complete:
 
 1st Day in Lab
 
-movie.js
+Starter Code:
 
-- Start time:
+- Start time: 3:20pm
 
-- Finish time:
-
-Starter Code
+- Finish time: 3:45pm
 
 - Start time: 5:42pm
 
-- Finish time:
+- Finish time: 8:09pm
+
+- Start time: _______
+
+- Finish time: ______
 
 Actual time needed to complete: _____

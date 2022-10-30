@@ -20,21 +20,25 @@ function getMovieData(city_name) {
     cache[key] = {};
     cache[key].timestamp = Date.now();
     cache[key].data = axios.get(url)
-      .then(response => parseMovie(response.data));
+      .then(response => parseMovie(response.data)); // response.data <<<<<<<<<<<<<<
   }
+  console.log('cache[key].data', cache[key].data);
   return cache[key].data;
 }
 
 function parseMovie(movieData) {
   try {
-    const movieDataInfo = movieData.data.results.map(movie =>{
+    const movieDataInfo = movieData.results.map(movie =>{ // movieData.results.map
+      console.log('movieData', movieData);
       return new Movie(movie);
     });
     return Promise.resolve(movieDataInfo);
   } catch (error) {
     return Promise.reject(error);
   }
+
 }
+
 
 class Movie {
   constructor(movies) {

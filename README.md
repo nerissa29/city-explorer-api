@@ -219,8 +219,8 @@ Starter Code:
 
 - Finish time: 8:09pm
 
-- Start time: _______
+- Start time: 8:20pm
 
-- Finish time: ______
+- Finish time: 11:01pm
 
 Actual time needed to complete: _____
